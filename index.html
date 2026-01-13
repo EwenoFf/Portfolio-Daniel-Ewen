@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <title>Daniel Ewen portfolio</title>
+    <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+
+    <!--lien avec les différentes images-->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div id="particles-js"></div>
+
+    <nav>
+      <div class="logo">Daniel<span> Ewen</span></div>
+      <div class="logo-enib">
+        <img src="imageenib.png" alt="ENIB" class="logo-enib text-like" />
+      </div>
+      <div class="nav-links">
+        <a href="#home">Accueil</a>
+        <a href="#competence">Compétence</a>
+        <a href="#projets">Projets</a>
+        <a href="#contact">Contact</a>
+      </div>
+    </nav>
+
+    <section class="presentation" id="home">
+      <div class="presentation-content">
+        <h1>
+          Bonjour, je suis <span>Ewen Daniel</span><br />Etudiant en 3ème année
+          d'école d'ingénieur
+        </h1>
+        <p>
+          Voici un petit projet de portfolio, qui montre l'étendu de mon travail
+          avec des petits projets que j'ai pu effectuer, mon expérience dans
+          différent domaine et enfin mes contacts afin de me contacter.
+        </p>
+        <a href="#contact" class="cta-button">Envoyez moi un message !</a>
+      </div>
+
+      <div class="profile-container">
+        <div class="profile-border"></div>
+        <div class="langage-icons">
+          <i
+            class="langage-icon"
+            style="top: 0; left: 50%; transform: translateX(-50%)"
+          >
+            <i class="fab fa-js"></i>
+          </i>
+          <i
+            class="langage-icon"
+            style="top: 50%; right: 0; transform: translateY(-50%)"
+          >
+            <i class="fas fa-code"></i>
+          </i>
+          <i
+            class="langage-icon"
+            style="bottom: 0; left: 50%; transform: translateX(-50%)"
+          >
+            <i class="fab fa-python"></i>
+          </i>
+
+          <i
+            class="langage-icon"
+            style="top: 50%; left: 0; transform: translateY(-50%)"
+          >
+            <i class="fab fa-linux"></i>
+          </i>
+        </div>
+        <img
+          src="images.jpg"
+          alt="Photo de profil"
+          width="300px"
+          class="profile-pic"
+        />
+      </div>
+    </section>
+
+    <section class="competence" id="competence">
+      <h2 class="section-title">Compétences</h2>
+      <div class="competence-content">
+        <div class="competence-text">
+          <p>
+            Je possède des compétences solides en cybersécurité, allant de
+            l’analyse de vulnérabilités à la réalisation de tests d’intrusion.
+            J’ai pu mettre en pratique mes connaissances sur des plateformes
+            comme TryHackMe et Hack The Box, où j’ai réalisé des challenges
+            d’exploitation de failles, de reverse engineering et de capture de
+            drapeaux. Je suis également à l’aise avec la sécurisation
+            d’applications web et la mise en place de bonnes pratiques pour
+            protéger des systèmes.
+          </p>
+          <p>
+            Je développe des projets en Rust, en mettant l’accent sur la
+            performance et la sécurité mémoire. J’ai notamment travaillé sur des
+            petits outils systèmes et des scripts d’automatisation, en
+            exploitant la gestion stricte des types et la sécurité
+            concurrentielle de Rust. Ce langage me permet de créer des
+            programmes rapides et fiables, tout en appliquant de bonnes
+            pratiques de développement moderne.
+          </p>
+          <p>
+            En Python, je réalise des scripts pour l’automatisation, l’analyse
+            de données et la création de petits outils réseau, en utilisant des
+            bibliothèques comme requests, pandas ou scapy. En JavaScript, je
+            développe des interfaces web interactives et dynamiques, avec des
+            animations, des effets visuels et des fonctionnalités côté client,
+            tout en appliquant les principes modernes du développement
+            front-end. Ces compétences me permettent de créer des applications
+            complètes, allant du script backend à l’interface utilisateur.
+          </p>
+        </div>
+        <div class="skills">
+          <div class="skill-item">
+            <div class="skill-name">
+              <span>Javascript</span>
+              <span>95%</span>
+            </div>
+            <div class="skill-bar">
+              <div class="skill-progress1" style="width: 95%"></div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-name">
+                <span>Python</span>
+                <span>100%</span>
+              </div>
+              <div class="skill-bar">
+                <div class="skill-progress2" style="width: 100%"></div>
+              </div>
+              <div class="skill-item">
+                <div class="skill-name">
+                  <span>Rust</span>
+                  <span>85%</span>
+                </div>
+                <div class="skill-bar">
+                  <div class="skill-progress3" style="width: 85%"></div>
+                </div>
+                <div class="skill-item">
+                  <div class="skill-name">
+                    <span>Rootme</span>
+                    <span>20%</span>
+                  </div>
+                  <div class="skill-bar">
+                    <div class="skill-progress4" style="width: 20%"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="projets" id="projets">
+      <h2 class="section-title">Mes projets</h2>
+      <div class="projets-grid">
+        <!--first card-->
+        <div class="projet-card">
+          <img
+            src="python.jpg"
+            alt="Projet 1"
+            height="200px"
+            class="projet-img"
+          />
+          <div class="projet-info">
+            <h3 class="projet-title">Jeu python</h3>
+            <p class="projet-description">
+              Un jeu codé en python de manière ascii qui reprend le principe
+              d'un space invader
+            </p>
+            <div class="projet-tech">
+              <span class="tech-tag">React</span>
+              <span class="tech-tag">Python</span>
+              <span class="tech-tag">Node.js</span>
+            </div>
+            <div class="projet-links">
+              <a href="#" class="projet-link"
+                ><i class="fas fa-external-link-alt"></i>Live Demo</a
+              >
+              <a
+                href="https://github.com/EwenoFf/shooter_3000"
+                class="projet-link"
+                ><i class="fab fa-github"></i>Code source</a
+              >
+            </div>
+          </div>
+        </div>
+        <!--2nde card-->
+        <div class="projet-card">
+          <img
+            src="python.jpg"
+            alt="Projet 1"
+            height="200px"
+            class="projet-img"
+          />
+          <div class="projet-info">
+            <h3 class="projet-title">Jeu python</h3>
+            <p class="projet-description">
+              Un jeu codé en python de manière ascii qui reprend le principe
+              d'un space invader
+            </p>
+            <div class="projet-tech">
+              <span class="tech-tag">React</span>
+              <span class="tech-tag">Python</span>
+              <span class="tech-tag">Node.js</span>
+            </div>
+            <div class="projet-links">
+              <a href="#" class="projet-link"
+                ><i class="fas fa-external-link-alt"> </i>Live Demo</a
+              >
+              <a href="#" class="projet-link"
+                ><i class="fab fa-github"></i>Code source</a
+              >
+            </div>
+          </div>
+        </div>
+        <!--3ème card-->
+        <div class="projet-card">
+          <img
+            src="python.jpg"
+            alt="Projet 1"
+            height="200px"
+            class="projet-img"
+          />
+          <div class="projet-info">
+            <h3 class="projet-title">Jeu python</h3>
+            <p class="projet-description">
+              Un jeu codé en python de manière ascii qui reprend le principe
+              d'un space invader
+            </p>
+            <div class="projet-tech">
+              <span class="tech-tag">React</span>
+              <span class="tech-tag">Python</span>
+              <span class="tech-tag">Node.js</span>
+            </div>
+            <div class="projet-links">
+              <a href="#" class="projet-link"
+                ><i class="fas fa-external-link-alt"></i>Live Demo</a
+              >
+              <a href="#" class="projet-link"
+                ><i class="fab fa-github"></i>Code source</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact" id="contact">
+      <h2 class="section-title">Me contacter</h2>
+      <form class="contact-form">
+        <div class="form-group">
+          <label for="name" class="form-label">Nom</label>
+          <input type="text" id="name" class="form-input" required />
+        </div>
+
+        <div class="form-group">
+          <label for="email" class="form-label">Email</label>
+          <input type="email" id="email" class="form-input" required />
+        </div>
+
+        <div class="form-group">
+          <label for="subject" class="form-label">Sujet</label>
+          <input type="text" id="subject" class="form-input" required />
+        </div>
+        <div class="form-group">
+          <label for="message" class="form-label">Message</label>
+          <textarea id="message" class="form-textarea" required></textarea>
+        </div>
+        <button type="submit" class="submit-btn">Envoyer le message</button>
+      </form>
+    </section>
+
+    <footer>
+      <div class="social-link">
+        <a href="#" class="social-link"><i class="fab fa-github"></i></a>
+        <a href="https://www.linkedin.com/in/danielewen22" class="social-link"
+          ><i class="fab fa-linkedin-in"></i
+        ></a>
+        <a href="https://www.instagram.com/ewen_.dnl/" class="social-link"
+          ><i class="fab fa-instagram"></i
+        ></a>
+      </div>
+      <p class="copyright">© 2025 Daniel Ewen portfolio, All rights reserved</p>
+    </footer>
+    <script src="script.ts"></script>
+    <!--effet de particule-->
+    <script>
+      particlesJS("particles-js", {
+        particles: {
+          number: { value: 100 },
+          color: { value: "#00bfff" },
+          shape: { type: "circle" },
+          opacity: { value: 0.6 },
+          size: { value: 3 },
+          line_linked: {
+            enable: true,
+            distance: 150,
+            color: "#00bfff",
+            opacity: 0.3,
+            width: 1,
+          },
+          move: {
+            enable: true,
+            speed: 2,
+            direction: "none",
+            random: false,
+            straight: false,
+            out_mode: "out",
+          },
+        },
+        interactivity: {
+          events: {
+            onhover: { enable: true, mode: "repulse" },
+            onclick: { enable: true, mode: "push" },
+            resize: true,
+          },
+          modes: {
+            repulse: { distance: 120 },
+            push: { particles_nb: 4 },
+          },
+        },
+        retina_detect: true,
+      });
+    </script>
+    <!--permet le défilement pile en -->
+    <script>
+      document.querySelectorAll('nav a[href^="#"]').forEach((anchor) => {
+        anchor.addEventListener("click", function (e) {
+          e.preventDefault();
+
+          const target = document.querySelector(this.getAttribute("href"));
+          const navbar = document.querySelector("nav");
+          const navbarHeight = navbar.offsetHeight; // hauteur réelle de la nav
+          const offsetTop = target.offsetTop - navbarHeight;
+
+          window.scrollTo({
+            top: offsetTop,
+            behavior: "smooth",
+          });
+        });
+      });
+    </script>
+  </body>
+</html>
