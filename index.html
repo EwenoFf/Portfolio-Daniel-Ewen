@@ -253,26 +253,63 @@
 
     <section class="contact" id="contact">
       <h2 class="section-title">Me contacter</h2>
-      <form class="contact-form">
+
+      <form
+        class="contact-form"
+        id="contact-form"
+        action="https://formspree.io/f/mzddzvnv"
+        method="POST"
+      >
         <div class="form-group">
           <label for="name" class="form-label">Nom</label>
-          <input type="text" id="name" class="form-input" required />
+          <input
+            type="text"
+            id="name"
+            name="name"
+            class="form-input"
+            required
+          />
         </div>
 
         <div class="form-group">
           <label for="email" class="form-label">Email</label>
-          <input type="email" id="email" class="form-input" required />
+          <input
+            type="email"
+            id="email"
+            name="email"
+            class="form-input"
+            required
+          />
         </div>
 
         <div class="form-group">
           <label for="subject" class="form-label">Sujet</label>
-          <input type="text" id="subject" class="form-input" required />
+          <input
+            type="text"
+            id="subject"
+            name="subject"
+            class="form-input"
+            required
+          />
         </div>
+
         <div class="form-group">
           <label for="message" class="form-label">Message</label>
-          <textarea id="message" class="form-textarea" required></textarea>
+          <textarea
+            id="message"
+            name="message"
+            class="form-textarea"
+            required
+          ></textarea>
         </div>
+
+        <!-- Anti-spam invisible -->
+        <input type="text" name="_gotcha" style="display: none" />
+
         <button type="submit" class="submit-btn">Envoyer le message</button>
+
+        <!-- Message de confirmation -->
+        <p id="form-status" class="form-status"></p>
       </form>
     </section>
 
