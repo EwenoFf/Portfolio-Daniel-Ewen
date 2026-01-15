@@ -472,7 +472,9 @@ nav {
   resize: vertical;
 }
 .submit-btn {
-  background: linear-gradient(90deg, var(--neon-blue), var(--neon-pink));
+  /*background: linear-gradient(90deg, var(--neon-blue), var(--neon-pink)); */
+  background-color: var(--neon-pink);
+
   color: white;
   border: none;
   padding: 1rem;
