@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="fr">
   <head>
     <meta charset="UTF-8" />
@@ -18,13 +18,15 @@
 
     <nav>
       <div class="logo">Daniel<span> Ewen</span></div>
-      <div class="logo-enib">
-        <img src="imageenib.png" alt="ENIB" class="logo-enib text-like" />
+      <div class="nav-center">
+        <img src="image_fond_enib.png" alt="ENIB" class="logo-enib" />
       </div>
+
       <div class="nav-links">
         <a href="#home">Accueil</a>
-        <a href="#competence">Compétence</a>
+        <a href="#competence">Compétences</a>
         <a href="#projets">Projets</a>
+        <a href="#presse">Articles de presse</a>
         <a href="#contact">Contact</a>
       </div>
     </nav>
@@ -36,9 +38,10 @@
           d'école d'ingénieur
         </h1>
         <p>
-          Voici un petit projet de portfolio, qui montre l'étendu de mon travail
-          avec des petits projets que j'ai pu effectuer, mon expérience dans
-          différent domaine et enfin mes contacts afin de me contacter.
+          Voici un portfolio, qui montre l'étendu de mon travail avec des petits
+          projets que j'ai pu effectuer, mon expérience dans différent domaine,
+          ce que le sport m'a apporté dans la vie de tous les jours et enfin un
+          onglet contact fonctionnel directement relié à ma boite mail.
         </p>
         <a href="#contact" class="cta-button">Envoyez moi un message !</a>
       </div>
@@ -224,24 +227,24 @@
         <!--3ème card-->
         <div class="projet-card">
           <img
-            src="python.jpg"
-            alt="Projet 1"
+            src="natur&moi.png"
+            alt="Projet 3"
             height="200px"
             class="projet-img"
           />
           <div class="projet-info">
-            <h3 class="projet-title">Jeu python</h3>
+            <h3 class="projet-title">Exercice de site web</h3>
             <p class="projet-description">
-              Un jeu codé en python de manière ascii qui reprend le principe
-              d'un space invader
+              Simulation d'un site web pour une entreprise qui vend des plantes.
             </p>
             <div class="projet-tech">
-              <span class="tech-tag">React</span>
-              <span class="tech-tag">Python</span>
-              <span class="tech-tag">Node.js</span>
+              <span class="tech-tag">HTML</span>
+              <span class="tech-tag">CSS</span>
             </div>
             <div class="projet-links">
-              <a href="#" class="projet-link"
+              <a
+                href="https://ewenoff.github.io/NaturETmoi/"
+                class="projet-link"
                 ><i class="fas fa-external-link-alt"></i>Live Demo</a
               >
               <a href="#" class="projet-link"
@@ -250,6 +253,62 @@
             </div>
           </div>
         </div>
+      </div>
+    </section>
+    <section class="press-section" id="presse">
+      <h2 class="section-title">Articles de presse</h2>
+
+      <p class="press-intro">
+        Au-delà du terrain, mon parcours sportif a été mis en lumière par
+        plusieurs articles de presse. Cette médiatisation a été une expérience
+        enrichissante, m’amenant à développer du recul, de la confiance et un
+        sens des responsabilités.
+      </p>
+
+      <div class="press-grid">
+        <a
+          href="https://newsouest.fr/ergue-gaberic/football/2022-12-16/ewen-daniel-le-batteur-de-mesure-des-u18-aux-paotred-dispount"
+          target="_blank"
+          class="press-card"
+        >
+          <img src="p1018774_0.jpg" alt="Article de presse" />
+          <div class="press-content">
+            <h3>
+              Ewen Daniel, le batteur de mesure des U18 aux Paotred Dispount
+            </h3>
+            <span>News Ouest • 16/12/2022</span>
+          </div>
+        </a>
+
+        <a href="https://lien-article-2" target="_blank" class="press-card">
+          <img src="6464f9013a28b62d822db4bf.jpg" alt="Article de presse" />
+          <div class="press-content">
+            <h3>
+              Les garçons du lycée Le Gros-Chêne, à Pontivy, champions de France
+              UNSS de futsal
+            </h3>
+            <span>Le Télégramme • 17/05/2023</span>
+          </div>
+        </a>
+      </div>
+
+      <div class="press-impact">
+        <h3>Ce que cette expérience m’a apporté</h3>
+        <p>
+          Mon expérience en sport-études, enrichie par un titre de championne de
+          France de futsal, m’a appris à évoluer dans un cadre exigeant où la
+          rigueur, la discipline et la constance sont essentielles. Le sport de
+          haut niveau m’a permis de développer un fort sens de l’engagement, une
+          réelle capacité à travailler en équipe et à assumer des
+          responsabilités, notamment dans un rôle de capitaine.
+        </p>
+        <p>
+          Au quotidien, ces compétences se traduisent par une approche
+          méthodique du travail, une bonne gestion de la pression et une
+          détermination à aller au bout des projets, même face aux difficultés.
+          Des qualités que je mets aujourd’hui au service de mon parcours
+          académique et professionnel.
+        </p>
       </div>
     </section>
 
@@ -415,6 +474,14 @@
           status.textContent = "❌ Problème de connexion.";
           status.className = "form-status error";
         }
+      });
+    </script>
+    <script>
+      const toggle = document.getElementById("menu-toggle");
+      const navLinks = document.getElementById("nav-links");
+
+      toggle.addEventListener("click", () => {
+        navLinks.classList.toggle("active");
       });
     </script>
   </body>

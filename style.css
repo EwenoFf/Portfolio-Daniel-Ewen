@@ -39,7 +39,7 @@ nav {
   color: transparent;
   text-shadow: 0 0 10px rgba(0, 136, 255, 0.3);
 }
-.text-like {
+.nav-center {
   height: 75px;
   width: auto;
 
@@ -47,6 +47,11 @@ nav {
   background: none;
 
   border-radius: 0;
+  transform: rotate(90deg);
+
+  justify-content: center;
+  align-items: center;
+  display: flex;
 
   /* Couleur & glow identiques au texte */
   filter: brightness(1.2) contrast(1.1) saturate(1.1)
@@ -54,20 +59,13 @@ nav {
 
   opacity: 1;
 }
-.text-like:hover {
+.nav-center:hover {
   filter: brightness(1.35) drop-shadow(0 0 10px var(--neon-blue))
     drop-shadow(0 0 18px var(--neon-pink));
 }
 .logo-enib {
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
-  z-index: 1;
-}
-
-.logo-enib img {
-  height: 70px;
+  height: clamp(300px, 12vw, 300px); /* ← PLUS GRAND */
+  width: auto;
 }
 
 .nav-links {
@@ -191,9 +189,12 @@ nav {
   border-radius: 50%;
   object-fit: cover;
   border: 5px solid transparent;
-  box-shadow: 0 0 20px var(--neon-blue), 0 0 40px var(--neon-purple),
+  box-shadow:
+    0 0 20px var(--neon-blue),
+    0 0 40px var(--neon-purple),
     0 0 60px var(--neon-pink);
-  animation: glow 4s ease-in-out infinite alternate,
+  animation:
+    glow 4s ease-in-out infinite alternate,
     float 6s ease-in-out infinite;
   z-index: 1;
 }
@@ -241,11 +242,15 @@ nav {
 }
 @keyframes glow {
   0% {
-    box-shadow: 0 0 20px var(--neon-blue), 0 0 40px var(--neon-purple),
+    box-shadow:
+      0 0 20px var(--neon-blue),
+      0 0 40px var(--neon-purple),
       0 0 60px var(--neon-pink);
   }
   100% {
-    box-shadow: 0 0 30px var(--neon-pink), 0 0 60px var(--neon-purple),
+    box-shadow:
+      0 0 30px var(--neon-pink),
+      0 0 60px var(--neon-purple),
       0 0 90px var(--neon-blue);
   }
 }
@@ -435,7 +440,7 @@ nav {
 }
 .contact {
   padding: 5rem 5%;
-  background-color: var(--darker-bg);
+  background-color: transparent;
   position: relative;
 }
 .contact-form {
@@ -565,11 +570,24 @@ html {
   }
 }
 @media (max-width: 768px) {
+  nav {
+    padding: 0.6rem 4%;
+    height: 120px;
+  }
+
   .nav-links {
     display: none;
   }
   .presentation h1 {
     font-size: 2.5rem;
+  }
+  .logo {
+    font-size: 1.2rem;
+  }
+
+  /* 🔹 LOGO ENIB PLUS DISCRET */
+  .logo-enib img {
+    height: 36px;
   }
   .profile-container {
     width: 300px;
@@ -688,4 +706,93 @@ body {
 .form-status.error {
   color: #c62828;
   opacity: 1;
+}
+
+.press-section {
+  padding: 80px 10%;
+  background: var(--darker-bg);
+  color: #e5e7eb;
+}
+
+.press-intro {
+  text-align: center;
+  max-width: 700px;
+  margin: 0 auto 50px;
+  font-size: 20px;
+  color: var(--text-color);
+}
+
+.press-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px;
+  margin-bottom: 60px;
+}
+
+.press-card {
+  background: var(--darker-bg);
+  border-radius: 14px;
+  overflow: hidden;
+  box-shadow: 0 20px 30px rgba(0, 136, 255, 0.2);
+  text-decoration: none;
+  color: inherit;
+  border-color: var(--neon-blue);
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+.press-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 10px 20px rgba(0, 136, 255, 0.2);
+  border: 1px solid var(--neon-blue);
+  filter: grayscale(0%);
+}
+
+.press-card img {
+  width: 100%;
+  height: 260px;
+  object-fit: cover;
+}
+.press-card img:hover {
+  transform: scale(1.05);
+  transition: transform 0.3s ease;
+}
+.press-content {
+  padding: 16px;
+}
+
+.press-content h3 {
+  font-size: 17px;
+  margin-bottom: 6px;
+}
+
+.press-content span {
+  font-size: 14px;
+  color: #94a3b8;
+}
+
+.press-impact {
+  max-width: 800px;
+  margin: 0 auto;
+  background: var(--darker-bg);
+  box-shadow: 0 20px 30px rgba(0, 136, 255, 0.2);
+  padding: 30px;
+  border-radius: 16px;
+}
+.press-impact:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 10px 20px rgba(0, 136, 255, 0.2);
+  border: 1px solid var(--neon-blue);
+  filter: grayscale(0%);
+}
+.press-impact h3 {
+  margin-bottom: 12px;
+  font-size: 20px;
+}
+
+.press-impact p {
+  line-height: 1.6;
+
+  color: var(--text-color);
 }
