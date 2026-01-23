@@ -35,13 +35,13 @@
       <div class="presentation-content">
         <h1>
           Bonjour, je suis <span>Ewen Daniel</span><br />Etudiant en 3ème année
-          d'école d'ingénieur
+          d'école d'ingénieur à la recherche d'un contrat d'alternance de 2 ans.
         </h1>
         <p>
           Voici un portfolio, qui montre l'étendu de mon travail avec des petits
-          projets que j'ai pu effectuer, mon expérience dans différent domaine,
-          ce que le sport m'a apporté dans la vie de tous les jours et enfin un
-          onglet contact fonctionnel directement relié à ma boite mail.
+          projets que j'ai pu effectuer, mon expérience dans différents
+          domaines, ce que le sport m'a apporté dans la vie de tous les jours et
+          enfin un onglet contact fonctionnel directement relié à ma boite mail.
         </p>
         <a href="#contact" class="cta-button">Envoyez moi un message !</a>
       </div>
@@ -177,14 +177,10 @@
               d'un space invader
             </p>
             <div class="projet-tech">
-              <span class="tech-tag">React</span>
               <span class="tech-tag">Python</span>
-              <span class="tech-tag">Node.js</span>
+              <span class="tech-tag">ASCII</span>
             </div>
             <div class="projet-links">
-              <a href="#" class="projet-link"
-                ><i class="fas fa-external-link-alt"></i>Live Demo</a
-              >
               <a
                 href="https://github.com/EwenoFf/shooter_3000"
                 class="projet-link"
@@ -208,9 +204,9 @@
               la génération de qr code personnalisable
             </p>
             <div class="projet-tech">
-              <span class="tech-tag">React</span>
+              <span class="tech-tag">Ttk librairies</span>
               <span class="tech-tag">Python</span>
-              <span class="tech-tag">Node.js</span>
+              <span class="tech-tag">Segno</span>
             </div>
             <div class="projet-links">
               <a
@@ -247,7 +243,9 @@
                 class="projet-link"
                 ><i class="fas fa-external-link-alt"></i>Live Demo</a
               >
-              <a href="#" class="projet-link"
+              <a
+                href="https://github.com/EwenoFf/NaturETmoi"
+                class="projet-link"
                 ><i class="fab fa-github"></i>Code source</a
               >
             </div>
@@ -363,12 +361,10 @@
           ></textarea>
         </div>
 
-        <!-- Anti-spam -->
         <input type="text" name="_gotcha" style="display: none" />
 
         <button type="submit" class="submit-btn">Envoyer le message</button>
 
-        <!-- Message de confirmation -->
         <p id="form-status" class="form-status"></p>
       </form>
     </section>
@@ -426,7 +422,7 @@
         retina_detect: true,
       });
     </script>
-    <!--permet le défilement pile en -->
+    <!--permet le défilement pile en face-->
     <script>
       document.querySelectorAll('nav a[href^="#"]').forEach((anchor) => {
         anchor.addEventListener("click", function (e) {
@@ -434,7 +430,7 @@
 
           const target = document.querySelector(this.getAttribute("href"));
           const navbar = document.querySelector("nav");
-          const navbarHeight = navbar.offsetHeight; // hauteur réelle de la nav
+          const navbarHeight = navbar.offsetHeight;
           const offsetTop = target.offsetTop - navbarHeight;
 
           window.scrollTo({
