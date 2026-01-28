@@ -477,7 +477,7 @@ nav {
   resize: vertical;
 }
 .submit-btn {
-  /*background: linear-gradient(90deg, var(--neon-blue), var(--neon-pink)); */
+  background: linear-gradient(90deg, var(--neon-blue), var(--neon-pink));
   background-color: var(--neon-pink);
 
   color: white;
@@ -585,7 +585,6 @@ html {
     font-size: 1.2rem;
   }
 
-  /* 🔹 LOGO ENIB PLUS DISCRET */
   .logo-enib img {
     height: 36px;
   }
@@ -628,14 +627,13 @@ html {
   left: 0;
 }
 
-/* Pour que tout ton contenu passe par-dessus */
 body {
   position: relative;
   z-index: 1;
   color: #fff;
   background: transparent;
 }
-/* Réinitialisation basique */
+
 * {
   margin: 0;
   padding: 0;
@@ -657,7 +655,6 @@ body {
   z-index: -1;
 }
 
-/* Réinitialisation basique */
 * {
   margin: 0;
   padding: 0;
